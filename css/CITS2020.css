@@ -1,0 +1,599 @@
+#container > header {
+	min-height: 9em;
+	xbackground-image: url(images/P2.jpg);
+	background-position: 0% 125%;
+	background-size: cover;
+	background-color: #1b262c ;
+}
+@media only screen and (min-width: 640px) {
+	#container > header {
+		background-position: 0% 75%;
+	}
+}
+@media only screen and (min-width: 800px) {
+	#container > header {
+		background-position: 0% 65%;
+	}
+}
+@media only screen and (min-width: 960px) {
+	#container > header {
+		background-position: 0% 55%;
+	}
+}
+header h1 {
+	color: white;
+	text-shadow: black 1px 1px 0;
+	text-shadow: black 2px 1px 0;
+	min-height: 4.8em;
+	text-align: right;
+	padding: 0 0.4em;
+}
+header h1 strong {
+	float: left;
+	margin-right: 1em;
+	white-space: nowrap;
+}
+#whenwhere {
+	color: white;
+	text-shadow: black 1px 1px 0;
+	text-shadow: black 2px 1px 0;
+	text-align: right;
+	padding: 0 0.6em;
+	white-space: nowrap;
+}
+header nav {
+	background-color: #0f4c75;
+	min-height: 1em;
+	-webkit-box-shadow: inset 0 8px 6px -6px black;
+	-moz-box-shadow: inset 0 8px 6px -6px black;
+	box-shadow: inset 0 8px 6px -6px black;
+	text-shadow: black 1px 1px 0;
+	overflow: hidden;
+}
+header nav:before, header nav:after, article:before, article:after { /* clearfix */
+	content: "";
+	display: table;
+	clear: both;
+}
+header nav a {
+	width: 16.6%;
+	float: left;
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+	text-decoration: none;
+	padding: 0.3em 0 0.2em;
+}
+header nav a+a {
+	border-left: 1px solid #630;
+	border-bottom: none;
+	margin-right: -1px;
+}
+header nav a:hover {
+	background-color: #3282b8;
+	color: #FFC;
+	-webkit-box-shadow: inset 0 8px 6px -6px black;
+	-moz-box-shadow: inset 0 8px 6px -6px black;
+	box-shadow: inset 0 8px 6px -6px black;
+}
+section header {
+	color: white;
+	background-color: #3282b8;
+	text-shadow: #630 1px 1px 0;
+	-webkit-box-shadow: inset 0 8px 6px -6px black;
+	-moz-box-shadow: inset 0 8px 6px -6px black;
+	box-shadow: inset 0 8px 6px -6px black;
+}
+article {
+	padding: 1em;
+	text-shadow: white 0 1px 0;
+	-webkit-box-shadow: inset 0 8px 6px -6px black;
+	-moz-box-shadow: inset 0 8px 6px -6px black;
+	box-shadow: inset 0 8px 6px -6px black;
+}
+code {
+	display: block;
+	font-family: consolas, "Courier New", monospace;
+	font-size: 87%;
+	padding: 0.8em 1em;
+	border: 1px dashed #630;
+	background-color: white;
+	margin: 0.5em 0;
+	line-height: 1.3;
+	overflow: hidden;
+}
+#committee h3 {
+	margin: 0;
+}
+#committee ol {
+	margin: 0 0 0.5em 1.3em;
+}
+#committee div.column {
+	float: left;
+	min-width: 48%;
+	margin-right: 4%;
+}
+#committee div.column+div.column {
+	margin: 0;
+}
+#committee span {
+	display: none;
+}
+#committee span.noemail {
+	display: inline;
+}
+#tpc article {
+	-moz-column-count: 2;
+	-moz-column-gap: 2em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 2em;
+	column-count: 2;
+	column-gap: 2em;
+}
+#tpc ul {
+	margin-top: 0;
+}
+#tpc li {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+#topics div {
+	float: left;
+	width: 48%;
+}
+#topics div.half1 {
+	clear: left;
+	margin-right: 2%;
+}
+
+/* Colors */
+
+body {
+	background-color: #FED;
+}
+a {
+	color: #630;
+}
+
+img.right {
+	float: right;
+	clear: right;
+	margin: 0 0 0.5em 0.5em;
+	width: 33%;
+	max-width: 12em;
+}
+
+/* Typography */
+
+body {
+	font-family: Sabon, Garamond, Palatino, "Times New Roman", serif;
+	font-size: 18px;
+}
+#committee ol {
+	list-style-type: disc;
+	font-weight: normal;
+}
+time {
+	font-weight: bold;
+}
+
+/* General structure */
+
+body {
+	margin: 0;
+}
+header h1 {
+	margin: 0;
+}
+header h1 strong {
+	font-size: 200%;
+}
+header h1 span.hide {
+	display: block;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+section {
+}
+section header {
+}
+section header h2 {
+	margin: 0;
+	padding: 0.4em 0.5em;
+}
+
+/* Details */
+header a.secondary {
+	display: none;
+}
+a {
+	word-break: break-all;
+}
+section header h2 a {
+	display: none;
+	text-decoration: none;
+	color: white;
+}
+section header h2:hover a {
+	display: inline;
+}
+#dates {
+	max-width: 50%;
+}
+#dates li {
+	position: relative;
+}
+time {
+	position: absolute;
+	top: 0;
+	left: 14em;
+	width: 7em;
+	width: 13em; /* when extended... */
+	text-align: right;
+}
+header h1 span.nobr {
+	white-space: nowrap;
+}
+@media only screen and (max-width: 768px) { /* 1st menu orientation switch (it was 512px but "Special Sessions" is too big) */
+	header h1 strong {
+		width: 100%;
+	}
+	#container header nav a {
+		font-size: 100%;
+		display: block;
+		width: 50%;
+		border-top: 1px solid #630;
+	}
+	#container header nav a+a:hover {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		background-image: none; /* IE8 needs this */
+	}
+	#container header nav strong {
+		display: inline;
+		font-size: 100%;
+		font-weight: bold;
+	}
+}
+@media only screen and (max-width: 480px) { /* 2nd menu orientation switch (it was 512px but "Special Sessions" is too big) */
+	#container header nav a {
+		float: none;
+		width: auto;
+		border-left: none;
+	}
+}
+@media only screen and (max-width: 1360px) { /* menu width switch (it was 1280px but "Special Sessions" is too big) */
+	header nav a {
+		font-size: 71%;
+		padding: 0.5em 0 0.4em;
+	}
+	header nav strong {
+		display: block;
+		font-size: 141%;
+		font-weight: normal;
+	}
+	/* sponsors hack */
+	#pdf {
+		height: 1em !important;
+	}
+	#about #sponsors {
+		position: relative;
+		left: 0;
+		max-width: 100%;
+	}
+	#sponsors h3 {
+		margin: 0;
+	}
+	#sponsors #comsoc {
+		clear: none;
+		float: none;
+		max-width: 25%;
+	}
+	#sponsors #scs, #sponsors #ftra {
+		max-width: 15%;
+	}
+	#sponsors #comsoc, #sponsors #ftra {
+		padding-left: 1em;
+	}
+	/*
+	#about #sponsors {
+		position: relative;
+		left: 0;
+		width: 100%;
+	}
+	#sponsors img {
+		margin: -8px 0 -32px;
+	}
+	*/
+}
+@media only screen and (max-width: 600px) { /* topics 1 column switch */
+	#topics div.half1, #topics div.half2 {
+		float: none;
+		width: auto;
+	}
+}
+@media only screen and (max-width : 640px) { /* committee 1-line 1-column switch */
+	#committee span, #committee div.from {
+		display: inline;
+	}
+}
+@media only screen and (max-width: 720px) {	/* important dates position switch */
+	#dates li {
+		position: relative;
+	}
+	time {
+		display: block;
+		position: relative;
+		left: 0;
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 768px) {	/* TPC 1-column switch */
+	#tpc article {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+}
+@media only screen and (min-width : 1024px) { /* committee 1-line 2-column switch */
+	#committee span, #committee div.from {
+		display: inline;
+	}
+}
+@media only screen and (min-width: 1280px) { /* topics 3 columns switch */
+	#container #topics div {
+		clear: none;
+		width: 31%;
+		margin-right: 0;
+	}
+	#container #topics div.third1 {
+		clear: left;
+	}
+	#container #topics div.third1, #container #topics div.third2 {
+		margin-right: 2%;
+	}
+}
+@media only screen and (min-width: 1280px) { /* TPC 3-column switch */
+	#tpc article {
+		-moz-column-count: 3;
+		-moz-column-gap: 2em;
+		-webkit-column-count: 3;
+		-webkit-column-gap: 2em;
+		column-count: 3;
+		column-gap: 2em;
+	}
+}
+@media only print {
+	#container * {
+		color: black;
+		background-color: white;
+		background-image: none;
+		text-shadow: none;
+	}
+	body {
+		font-size: 14px;
+	}
+}
+/* sponsors hack */
+#about article {
+	position: relative;
+}
+#sponsors {
+	xborder: 1px solid blue;
+	position: absolute;
+	right: 2em;
+	text-align: center;
+	max-width: 60%;
+	width: 100%;
+	margin-bottom: -1em;
+}
+#sponsors img {
+	xborder: 1px solid red;
+}
+#sponsors h3 {
+	margin: 0;
+	xborder: 1px solid lime;
+}
+#pdf {
+	xheight: 10em;
+}
+#dalian {
+	max-height: 9em;
+	max-width: 20%;
+}
+#comsoc { /* BAD: used twice :-( */
+	max-width: 100%;
+	max-height: 6em;
+	clear: left;
+	/* float: left; */
+}
+#scs, #ftra {
+	max-width: 25%;
+	max-height: 6.7em;
+}
+/*
+#sponsors {
+	position: absolute;
+	right: 2em;
+	text-align: center;
+	width: 50%;
+}
+#sponsors h3 {
+	margin: 0;
+}
+#scs, #ftra {
+	max-width: 20%;
+	max-height: 8em;
+	margin-top: 2%;
+}
+#comsoc {
+	max-width: 28%;
+	max-height: 8em;
+	margin-top: 0;
+}
+*/
+#extended {
+	color: white;
+	background-color: darkred;
+	-webkit-box-shadow: inset 0 8px 6px -6px black;
+	-moz-box-shadow: inset 0 8px 6px -6px black;
+	box-shadow: inset 0 8px 6px -6px black;
+	text-shadow: black 1px 1px 0;
+	max-width: 30em;
+	padding: 0.2em 0.4em;
+}
+span.stars {
+	font-size: small;
+	position: relative;
+	top: -0.2em;
+}
+#registration td+td {
+	text-align: center;
+}
+#theoxenia {
+	border: 1px solid black;
+	padding: 0.3em 0.4em;
+	margin-bottom: 0.5em;
+}
+a.notyet {
+	text-decoration: underline;
+}
+a.notyet:hover {
+	content: "[Link available soon]";
+	cursor: pointer;
+	font-weight: bold;
+}
+#new {
+	color: white;
+	background-color:#0f4c75;
+	-webkit-box-shadow: inset 0 8px 6px -6px black;
+	-moz-box-shadow: inset 0 8px 6px -6px black;
+	box-shadow: inset 0 8px 6px -6px black;
+	text-shadow: black 1px 1px 0;
+	max-width: 30em;
+	padding: 0.4em 0.8em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	xfont-size: 1.5rem;
+}
+#new a {
+	color: yellow;
+}
+#location div.column {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+#location div.column+div.column {
+	margin: 0;
+}
+#location div.column+p {
+	clear: both;
+}
+@media only screen and (max-width : 640px) { /* location 1-column switch */
+	#location div.column {
+		float: none;
+		width: 100%;
+	}
+}
+ul.gallery {
+	list-style-type: none;
+	margin: 0;
+}
+ul.gallery a, ul.gallery img {
+	width: 128px;
+	height: 128px;
+}
+ul.gallery a {
+	display: block;
+	float: left;
+	margin: 0 0.5em 0.5em 0;
+}
+#location p {
+	clear: both;
+}
+sup {
+	font-size: 75%;
+	color: darkred;
+	font-weight: normal;
+}
+p sup:before {
+	content: "(";
+}
+p sup:after {
+	content: ")";
+}
+#keynotes h3, #invited h3, #tutorials h3 {
+	clear: left;
+}
+#keynotes div.column, #invited div.column, #tutorials div.column {
+	width: 48%;
+	float: left;
+	margin-right: 2%;
+}
+#keynotes img, #invited img, #tutorials img {
+	float: left;
+	margin-right: 8px;
+}
+@media only screen and (max-width: 768px) {
+	#keynotes div.column, #invited div.column, #tutorials div.column {
+		width: 100% !important;
+		float: none;
+		margin-right:0;
+	}
+}
+a[href$=".pdf"]:after {
+	content: url(../../CITS2019/images/pdf_icon.png);
+	padding-left: 2px;
+}
+#registration h3 {
+	font-size: 1.3rem;
+}
+#registration ol>li {
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+#registration ul>li {
+	font-size: 1rem;
+	font-weight: normal;
+}
+#accomodation ol {
+	font-weight: bold;
+}
+#accomodation p {
+	font-weight: normal;
+}
+#location img {
+	max-width: 67%;
+}
+@media only screen and (max-width: 1024px) {
+	#location img {
+		max-width: 75%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	#location img {
+		max-width: 100%;
+	}
+}
+#accomodation div.column {
+	width: 48%;
+	float: left;
+	margin-right: 1%;
+}
+#accomodation img {
+	width: 640px;
+	max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	#accomodation div.column {
+		width: 100% !important;
+		float: none;
+		margin-right:0;
+	}
+}
