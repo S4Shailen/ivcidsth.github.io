@@ -310,7 +310,7 @@ header h1 span.nobr {
 	*/
 }
 @media only screen and (max-width: 600px) { /* topics 1 column switch */
-	#topics div.half1, #topics div.half2 {
+	#topics div.half1, #topics div.half2 , #topics div.half3{
 		float: none;
 		width: auto;
 	}
